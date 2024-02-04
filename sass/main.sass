@@ -1,0 +1,203 @@
+@import base.sass
+@import mixins.sass
+
+@media screen and (min-width: 0px)
+  %transparent-shadow
+    backdrop-filter: blur(10px)
+    background-color: $color-transparent
+    box-shadow: 0px 0px 5px 0px $color-semi-white
+
+  %flex-center
+    align-items: center
+    display: flex
+    justify-content: center
+
+  #header-container
+    @extend %transparent-shadow
+    @extend %flex-center
+    height: 100px
+    position: sticky
+    top: 0
+    width: 100%
+    z-index: 1
+    h1
+      animation: fontChange 10s infinite ease-in-out
+      font-size: 30px
+      text-shadow: 0 2px 3px $color-black
+
+  @keyframes fontChange
+    10%
+      @include fontKeyframe('Font 1')
+
+    20%
+      @include fontKeyframe('Font 2')
+
+    30%
+      @include fontKeyframe('Font 3')
+
+    40%
+      @include fontKeyframe('Font 4')
+
+    50%
+      @include fontKeyframe('Font 5')
+
+    60%
+      @include fontKeyframe('Font 6')
+
+    70%
+      @include fontKeyframe('Font 7')
+
+    80%
+      @include fontKeyframe('Font 8')
+
+    90%
+      @include fontKeyframe('Font 9')
+
+  @font-face
+    font-family: 'Font 1'
+    src: url('../fonts/Antology.ttf')
+  
+  @font-face
+    font-family: 'Font 2'
+    src: url('../fonts/Catherina.otf')
+  
+  @font-face
+    font-family: 'Font 3'
+    src: url('../fonts/Duckname.ttf')
+  
+  @font-face
+    font-family: 'Font 4'
+    src: url('../fonts/Farmers Market.ttf')
+  
+  @font-face
+    font-family: 'Font 5'
+    src: url('../fonts/InkVerse.ttf')
+  
+  @font-face
+    font-family: 'Font 6'
+    src: url('../fonts/Miracle Dream.ttf')
+  
+  @font-face
+    font-family: 'Font 7'
+    src: url('../fonts/Namecat.ttf')
+  
+  @font-face
+    font-family: 'Font 8'
+    src: url('../fonts/Road Racer Demo.ttf')
+
+  @font-face
+    font-family: 'Font 9'
+    src: url('../fonts/Something Unfriendly Demo.otf')
+  
+  #alert-box
+    @extend %transparent-shadow
+    @extend %flex-center
+    animation: smoothPopUp .2s ease
+    border-radius: 5px
+    height: 100px
+    margin: 0 auto
+    position: fixed
+    text-align: center
+    left: 5px
+    right: 5px
+    top: 110px
+    transition: 4s ease-in-out
+    width: 90%
+
+  @keyframes smoothPopUp
+    0%
+      top: 20px
+
+    100%
+      top: 110px
+
+  #alert-box 
+    span
+      color: $color-white
+      font-weight: 600
+      text-shadow: 0 2px 3px $color-black
+      z-index: 1
+
+  #alert-box-image
+    left: -29px
+    position: absolute
+    top: -47px
+    width: 70px
+    z-index: -1
+
+  #select-option
+    @extend %transparent-shadow
+    border: 2px solid $color-white
+    border-radius: 5px
+    cursor: pointer
+    height: 30px
+    outline: none
+    text-shadow: 0 2px 3px $color-black
+    width: auto
+    option
+      color: $color-black
+
+  #main-container
+    @extend %flex-center
+    flex-direction: column
+    height: calc(100vh - 100px)
+    min-height: 600px
+    width: 100%
+
+  #user-textareas
+    text-align: center
+    width: 100%
+    textarea
+      @extend %transparent-shadow
+      border: none
+      border-radius: 5px
+      color: $color-black
+      font-size: 20px
+      height: 200px
+      margin: 10px 0
+      max-width: 500px
+      outline: none
+      padding: 5px 5px
+      resize: none
+      text-shadow: 0 0 1px $color-black
+      width: 90%
+
+  #user-buttons
+    @extend %flex-center
+    flex-direction: row
+    width: 100%
+
+  .buttons
+    @extend %transparent-shadow
+    border: 2px solid $color-white
+    border-radius: 5px
+    color: $color-white
+    cursor: pointer
+    font-weight: 600
+    height: 40px
+    margin: 0 auto
+    min-width: 80px
+    overflow: hidden
+    padding: 0 5px
+    text-shadow: 0 2px 3px $color-black
+    width: auto
+
+  #footer-container
+    align-items: center
+    background-color: $color-black
+    display: flex
+    flex-direction: column
+    height: 200px
+    justify-content: space-evenly
+    width: 100%
+
+  #author-container
+    span
+      text-decoration: underline
+
+  #social-media-container
+    height: auto
+    text-align: center
+    width: 100%
+    a
+      margin: 0 20px
