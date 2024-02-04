@@ -15,7 +15,7 @@ function inputValidation(input) {
 
 function isEmptyValidation(output) {
   if(output.value === '' || output.value === null) {
-    error.createBox(`Impossível copiar uma ${typeof output.value} vazia.`, 'image4.png');
+    error.createBox(`Impossível copiar uma ${typeof output.value} vazia.`);
     return false;
   } else return true;
 }
