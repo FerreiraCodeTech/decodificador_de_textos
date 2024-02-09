@@ -27,7 +27,7 @@ O projeto está estruturado da seguinte forma:
 ## Como Usar
 
 1. Abra o [Projeto](https://ferreiracodetech.github.io/decodificador_de_textos/) em um navegador web.
-2. Selecione o método de codificação/descodificação desejado no menu suspenso.
+2. Selecione o método de codificação/decodificação desejado no menu suspenso.
 3. Insira o texto na caixa de entrada.
 4. Clique no botão correspondente para codificar ou decodificar o texto.
 5. O resultado será exibido na caixa de saída.
