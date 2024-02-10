@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  color: rgb(255, 255, 255);
+  color: rgb(132, 108, 86);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 100%;
   margin: 0;
@@ -22,8 +22,8 @@ body {
 @media screen and (min-width: 0px) {
   .buttons, #user-textareas textarea, #select-option, #alert-box, #header-container {
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.249);
-    box-shadow: 0px 0px 5px 0px rgb(213, 213, 213);
+    background-color: rgba(31, 31, 31, 0.249);
+    box-shadow: 0px 0px 5px 0px rgb(132, 108, 86);
   }
   #user-buttons, #main-container, #alert-box, #header-container {
     align-items: center;
@@ -32,10 +32,7 @@ body {
   }
   #header-container {
     height: 100px;
-    position: sticky;
-    top: 0;
     width: 100%;
-    z-index: 1;
   }
   #header-container h1 {
     animation: fontChange 10s infinite ease-in-out;
@@ -129,7 +126,7 @@ body {
     }
   }
   #alert-box span {
-    color: rgb(255, 255, 255);
+    color: rgb(132, 108, 86);
     font-weight: 600;
     text-shadow: 0 2px 3px rgb(0, 0, 0);
     z-index: 1;
@@ -142,7 +139,7 @@ body {
     z-index: -1;
   }
   #select-option {
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(132, 108, 86);
     border-radius: 5px;
     cursor: pointer;
     height: 30px;
@@ -151,7 +148,7 @@ body {
     width: auto;
   }
   #select-option option {
-    color: rgb(0, 0, 0);
+    color: rgb(132, 108, 86);
   }
   #main-container {
     flex-direction: column;
@@ -166,7 +163,7 @@ body {
   #user-textareas textarea {
     border: none;
     border-radius: 5px;
-    color: rgb(0, 0, 0);
+    color: rgb(132, 108, 86);
     font-size: 20px;
     height: 200px;
     margin: 10px 0;
@@ -182,9 +179,9 @@ body {
     width: 100%;
   }
   .buttons {
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(132, 108, 86);
     border-radius: 5px;
-    color: rgb(255, 255, 255);
+    color: rgb(132, 108, 86);
     cursor: pointer;
     font-weight: 600;
     height: 40px;
