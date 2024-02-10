@@ -53,31 +53,31 @@
   @font-face
     font-family: 'Font 1'
     src: url('../fonts/Antology.ttf')
-  
+
   @font-face
     font-family: 'Font 2'
     src: url('../fonts/Catherina.otf')
-  
+
   @font-face
     font-family: 'Font 3'
     src: url('../fonts/Duckname.ttf')
-  
+
   @font-face
     font-family: 'Font 4'
     src: url('../fonts/Farmers Market.ttf')
-  
+
   @font-face
     font-family: 'Font 5'
     src: url('../fonts/InkVerse.ttf')
-  
+
   @font-face
     font-family: 'Font 6'
     src: url('../fonts/Miracle Dream.ttf')
-  
+
   @font-face
     font-family: 'Font 7'
     src: url('../fonts/Namecat.ttf')
-  
+
   @font-face
     font-family: 'Font 8'
     src: url('../fonts/Road Racer Demo.ttf')
@@ -85,7 +85,7 @@
   @font-face
     font-family: 'Font 9'
     src: url('../fonts/Something Unfriendly Demo.otf')
-  
+
   #alert-box
     @extend %transparent-shadow
     @extend %flex-center
@@ -93,6 +93,7 @@
     border-radius: 5px
     height: 100px
     margin: 0 auto
+    max-width: 500px
     position: fixed
     text-align: center
     left: 5px
@@ -108,7 +109,7 @@
     100%
       top: 110px
 
-  #alert-box 
+  #alert-box
     span
       color: $color-gold
       font-weight: 600
@@ -138,10 +139,14 @@
     @extend %flex-center
     flex-direction: column
     height: calc(100vh - 100px)
+    justify-content: space-evenly
     min-height: 600px
     width: 100%
 
   #user-textareas
+    align-items: center
+    display: flex
+    flex-direction: column
     text-align: center
     width: 100%
     textarea
@@ -162,6 +167,7 @@
   #user-buttons
     @extend %flex-center
     flex-direction: row
+    max-width: 500px
     width: 100%
 
   .buttons

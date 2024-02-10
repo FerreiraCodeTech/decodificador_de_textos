@@ -109,6 +109,7 @@ body {
     border-radius: 5px;
     height: 100px;
     margin: 0 auto;
+    max-width: 500px;
     position: fixed;
     text-align: center;
     left: 5px;
@@ -153,10 +154,14 @@ body {
   #main-container {
     flex-direction: column;
     height: calc(100vh - 100px);
+    justify-content: space-evenly;
     min-height: 600px;
     width: 100%;
   }
   #user-textareas {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 100%;
   }
@@ -176,6 +181,7 @@ body {
   }
   #user-buttons {
     flex-direction: row;
+    max-width: 500px;
     width: 100%;
   }
   .buttons {
