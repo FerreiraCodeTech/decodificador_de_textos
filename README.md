@@ -1,4 +1,4 @@
-# Decoder
+# Deecodeer
 
 Este é um projeto chamado Decoder, que consiste em uma aplicação web para codificar e decodificar texto usando diferentes métodos, como o alura challenge e o binário.
 
