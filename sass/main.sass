@@ -5,7 +5,7 @@
   %transparent-shadow
     backdrop-filter: blur(10px)
     background-color: $color-transparent
-    box-shadow: 0px 0px 5px 0px $color-semi-white
+    box-shadow: 0px 0px 5px 0px $color-gold
 
   %flex-center
     align-items: center
@@ -16,10 +16,7 @@
     @extend %transparent-shadow
     @extend %flex-center
     height: 100px
-    position: sticky
-    top: 0
     width: 100%
-    z-index: 1
     h1
       animation: fontChange 10s infinite ease-in-out
       font-size: 30px
@@ -113,7 +110,7 @@
 
   #alert-box 
     span
-      color: $color-white
+      color: $color-gold
       font-weight: 600
       text-shadow: 0 2px 3px $color-black
       z-index: 1
@@ -127,7 +124,7 @@
 
   #select-option
     @extend %transparent-shadow
-    border: 2px solid $color-white
+    border: 2px solid $color-gold
     border-radius: 5px
     cursor: pointer
     height: 30px
@@ -135,7 +132,7 @@
     text-shadow: 0 2px 3px $color-black
     width: auto
     option
-      color: $color-black
+      color: $color-gold
 
   #main-container
     @extend %flex-center
@@ -151,7 +148,7 @@
       @extend %transparent-shadow
       border: none
       border-radius: 5px
-      color: $color-black
+      color: $color-gold
       font-size: 20px
       height: 200px
       margin: 10px 0
@@ -169,9 +166,9 @@
 
   .buttons
     @extend %transparent-shadow
-    border: 2px solid $color-white
+    border: 2px solid $color-gold
     border-radius: 5px
-    color: $color-white
+    color: $color-gold
     cursor: pointer
     font-weight: 600
     height: 40px
