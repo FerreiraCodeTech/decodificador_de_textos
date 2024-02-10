@@ -16,6 +16,21 @@ $color-black: rgb(0, 0, 0)
 html
   scroll-behavior: smooth
 
+::-webkit-scrollbar
+  width: 5px
+
+::-webkit-scrollbar-thumb 
+  background: $color-gold
+  border-radius: 5px
+  box-shadow: 0px 0px 5px 0px $color-gold
+
+::-webkit-scrollbar-track
+  backdrop-filter: blur(10px)
+  background-color: $color-semi-black
+
+::-webkit-scrollbar-button 
+  display: none
+
 body
   background: url($background-image) no-repeat
   background-position: center
