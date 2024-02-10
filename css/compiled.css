@@ -27,10 +27,6 @@ html {
   background-color: rgb(48, 48, 48);
 }
 
-::-webkit-scrollbar-button {
-  display: none;
-}
-
 body {
   background: url("../images/background.jpg") no-repeat;
   background-position: center;
